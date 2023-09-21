@@ -1,0 +1,143 @@
+.menu{
+    height: 7rem;
+    background-color: rgba(14, 13, 13, 0.976);
+}
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    /* max-width: 1200px; */
+    height: 100%;
+    margin: 0 auto
+}
+
+.menu__links {
+    height: 100%;
+    transition: transform .5s;
+    display: block;
+    display: flex;
+    gap: 47px;
+}
+
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__nesting{
+    clip-path:var(--clip);
+    list-style: none;
+    transition: clip-path .3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    box-shadow: inset 1000px 300px 1000px rgba(14, 13, 13, 0.976);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 0.3rem;
+}
+
+.menu__link{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: #DEDEDE;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: -0.5px; 
+}
+
+.menu__link:hover {
+    background-color: rgba(45, 45, 45, 0.274);
+    
+}
+
+.menu__link--inside{
+    padding: 3rem 2rem 3rem 2rem;
+    
+}
+.menu__link--inside:hover{
+    background-color: #9D9D9D;
+    width: 100%;
+    
+}
+
+
+@media(max-width: 999px){
+
+    .menu__item{
+        --clip:0;
+        overflow: hidden;
+    }
+
+    .menu__item--active{
+        --background: 9D9D9D;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+    .menu__links {
+        position: fixed;
+        max-width: 40rem;
+        width: 100%;
+        top: 7rem;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        overflow-y: auto; /*revisa*/
+        display: grid;
+        grid-auto-rows: max-content;
+
+    }
+
+    .menu__link{
+        padding: 2.5rem 0;
+        padding-left: 3rem;
+        height: auto;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid  #9D9D9D;
+    }
+
+}

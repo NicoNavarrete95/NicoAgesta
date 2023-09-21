@@ -1,0 +1,204 @@
+html{
+    scroll-behavior: smooth
+}
+
+/* h1 {
+    font-size: 4.3rem;
+    letter-spacing: 5.16px;
+} */
+
+.sub-header #productor {
+    font-size: 1.8rem;
+    letter-spacing: 0.9px;
+}
+
+h2, #contact--title h2  {
+    font-size: 3.6rem;
+    margin-bottom: 8rem;
+    margin-top: 8rem;   
+}
+
+h3, h4 {
+    font-size: 2.4rem;
+    font-style: normal;
+    /* font-weight: 200; */
+    line-height: 2.7839rem;
+    letter-spacing: -0.348px;
+    width: 100%;
+    height: 4.4rem;
+    margin-left: 4px;
+}
+
+.nav, .nico-photo{
+    display: none;
+}
+
+.home {
+    display: flex;
+    background-image: url(/assets/imgs/desktop/desktop-home.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.home--info {
+    display: flex;
+    width: 81.8vw;
+    height: 60%;
+    min-height: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    /* margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3rem; */
+}
+
+
+.home--text{
+    display: flex;
+    flex-direction: column;
+}
+
+.home--biography{
+    width: 45vw;
+}
+
+.home--biography #home_text_one{
+    color: #ffffff;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.8vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 5rem; 
+    letter-spacing: 0;
+    margin-bottom: 2vh;
+}
+.home--biography #home_text_two{
+    color: #959595;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem; /* 150% */
+    letter-spacing: 0;
+    margin-bottom: 5vh;
+}
+
+#img-home{
+    height: 100%;
+    width: 100%;   
+}
+
+.home--photo{
+    
+}
+
+.home--arrow{
+    position: absolute;
+    bottom: 6vh;
+    display: inline-flex;
+    padding: 6.233px;
+    justify-content: center;
+    align-items: center;
+    gap: 24.933px;
+    color: #DEDEDE;
+    font-family: Inter;
+    font-size: 14.467px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12.467px; /* 100% */
+    letter-spacing: 1.169px;
+    text-transform: uppercase;
+    opacity: 0.7;                                                                                                      
+}
+
+
+
+.produ-rec-mix{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70rem;
+    width: 100%;
+    background-image: url(/assets/imgs/bitmap.png);
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed; */
+    
+    margin-bottom: 8.8rem;
+}
+
+#spotify iframe{
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.16);
+    width: 30vw;  
+    height: 60rem;  
+}
+
+
+.sesiones--content, .sonoro--content{
+    width: 56vw;
+}
+.sonoro--content{
+    margin-bottom: 0;
+}
+
+.content-div iframe{
+    width: 100%;
+    height: 46.1rem;  
+    border-radius: 10px;
+}
+
+.biography{
+    display: none;
+}
+
+.contact--photo{
+    display: inherit;
+    /* height: 20%; */
+}
+.contact--photo img{
+    height: 50rem;
+}
+
+.contact--content{
+    margin-top: 4rem;
+}
+
+.contact--buttons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    flex-direction: row
+}
+
+.contact--icons{    
+    justify-content: center;
+    align-items: center;
+    gap: 7.2rem;
+    margin-bottom: 16rem;
+    width: 100%;
+    height: 100%;
+}
+
+#a__link--contact{
+    bottom: 0rem;
+}
+
+#contact--title h2{
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 1440px){
+
+}
