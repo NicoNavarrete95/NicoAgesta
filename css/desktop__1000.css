@@ -208,3 +208,25 @@ h3, h4 {
     width: 100%;
 }
 
+@media(max-width: 1300px){
+    #img-home{
+        height: 60vh;
+        width: 100%;   
+    }
+
+    .home--biography #home_text_one,  .home--biography #home_text_two{
+        line-height: 3rem;
+    }
+
+    .button {
+        width: 24rem;
+        height: 4rem;        
+        font-size: 1.3rem;        
+    }
+
+    #contact--button--mail span, #contact--button--wpp span {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: contain;
+    }
+}
