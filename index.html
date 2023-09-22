@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 600px)">
-    <link rel="stylesheet" href="/css/menu desktop.css" media="(min-width: 999px)">
+    <link rel="stylesheet" href="/css/menu desktop.css" media="(min-width: 1000px)">
     <link rel="stylesheet" href="/css/desktop__1024.css" media="(min-width: 999px)">
-    <link rel="stylesheet" href="/css/desktop__1440.css" media="(min-width: 1400px)">
+    <link rel="stylesheet" href="/css/desktop__1440.css" media="(min-width: 1700px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,16 +39,16 @@
                     </li>
         
                     <li class="menu__item menu__item--show">
-                        <a href="" class="menu__link">TRABAJOS </a>
+                        <a href="#" onclick="return false" class="menu__link">TRABAJOS </a>
                         <ul class="menu__nesting">
                             <li class="menu__inside">
-                                <a href="#produ-rec-mix--a" class="menu__link menu__link--inside">REC PRODU Y MIX</a>
+                                <a href="#produ-rec-mix--a" class="menu__link menu__link--inside" id="menu__link--rec">REC PRODU Y MIX</a>
                             </li>
                             <li class="menu__inside">
                                 <a href="#sesiones--a" class="menu__link menu__link--inside">REC Y MIX DE SESIONES</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="#sonoro--a" class="menu__link menu__link--inside">DISEÑO SONORO</a>
+                                <a href="#sonoro--a" class="menu__link menu__link--inside" id="menu__link--sonoro">DISEÑO SONORO</a>
                             </li>
                         </ul>
                     </li>
@@ -204,7 +204,7 @@
                 <h2>DISEÑO SONORO</h2>
             </div>
             <div class="sonoro--content">
-                <article class="content-div" id="video-LCDYNE1">
+                <article class="content-div content-div--sonoro" id="video-LCDYNE1">
                     <div class="sonoro--info" id="text-LCDYNE">
                         <p>MUSICA ORIGINAL LARGOMETRAJE</p>
                         <p>LAS COSAS DONDE YA NO ESTABAN</p>
@@ -212,18 +212,18 @@
                     <!-- <video src="" poster="/assets/imgs/trailer1-cel.png"playsinline="" loop="" autoplay="" muted=""></video> -->
                     <iframe width="560" height="200" src="https://www.youtube-nocookie.com/embed/grIzCmnSpKA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </article>
-                <article class="content-div" id="video-LCDYNE2">
+                <article class="content-div content-div--sonoro" id="video-LCDYNE2">
                     <!-- <video src="" poster="/assets/imgs/trailer2-cel.png"playsinline="" loop="" autoplay="" muted=""></video> -->
                     <iframe width="560" height="200" src="https://www.youtube-nocookie.com/embed/4pcPWQbJcJk?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </article>
-                <article class="content-div" id="video-DOS95-1">
+                <article class="content-div content-div--sonoro" id="video-DOS95-1">
                     <div class="sonoro--info" id="text-dos95">
                         <p>MUSICA ORIGINAL CORTOMETRAJE</p>
                         <p>DOS95 Y MEDIO</p>
                     </div>
                     <!-- <video src="" poster="/assets/imgs/corto1-cel.png"playsinline="" loop="" autoplay="" muted=""></video> -->
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRsc6rr6Jm8?si=zvdx59jWFhpPKK4m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </article>
-                <article class="content-div" id="video-hausi">
+                <article class="content-div content-div--sonoro" id="video-hausi">
                     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7ZHwXBLJ-1U?si=ltk1gwUsy7p8mKxT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </article>
             </div>
         </section>
@@ -236,7 +236,7 @@
             </div>
         </section>
         <section class="contact">
-            <a name="contact--a" class="a--link" id="a__link--contact"></a>
+    <a name="contact--a" class="a--link" id="a__link--contact"></a>
             <div id="contact--title">
                 <h2>CONTACTO</h2>
             </div>
