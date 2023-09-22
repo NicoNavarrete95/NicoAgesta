@@ -239,7 +239,7 @@ main{
     font-style: normal;
     font-weight: 200;
     line-height: 2rem;
-    color:#959595    
+    color:#959595; 
 }
 
 #video-LCDYNE2, .sonoro--content{
@@ -348,6 +348,7 @@ main{
 #contact--button--wpp, #contact--button--mail {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #contact--button--wpp span{
     background-image: url(/assets/icons/wpp\ white.svg);
@@ -419,7 +420,7 @@ main{
     }
   }
 
-@media(orientation: landscape){
+@media(orientation: landscape),(min-width: 600px){
     .content-div iframe{
         width: 100%;
         height: 70vh;
