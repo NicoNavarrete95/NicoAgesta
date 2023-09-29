@@ -2,11 +2,6 @@ html{
     scroll-behavior: smooth
 }
 
-/* h1 {
-    font-size: 4.3rem;
-    letter-spacing: 5.16px;
-} */
-
 .sub-header #productor {
     font-size: 1.8rem;
     letter-spacing: 0.9px;
@@ -21,7 +16,6 @@ h2, #contact--title h2  {
 h3, h4 {
     font-size: 2.4rem;
     font-style: normal;
-    /* font-weight: 200; */
     line-height: 2.7839rem;
     letter-spacing: -0.348px;
     width: 100%;
@@ -53,10 +47,6 @@ h3, h4 {
     min-height: auto;
     align-items: flex-start;
     justify-content: space-between;
-    
-    /* margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 3rem; */
 }
 
 
@@ -124,12 +114,9 @@ h3, h4 {
     align-items: center;
     height: 70rem;
     width: 100%;
-    background-image: url(/assets/imgs/bitmap.png);
+    background-image: url(/assets/imgs/desktop/produ-rec-mix.png);
     background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed; */
-    
+    background-position: center;    
     margin-bottom: 8.8rem;
 }
 
@@ -175,11 +162,10 @@ h3, h4 {
 
 .contact--photo{
     display: inherit;
-    /* height: 20%; */
 }
 .contact--photo img{
     height: 50vh;
-    margin-bottom: 4vh;
+    margin-bottom: 6vh;
 }
 
 .contact--buttons{
@@ -195,7 +181,6 @@ h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 7.2rem;
-    /* margin-bottom: 16rem; */
     width: 100%;
     height: 100%;
 }
